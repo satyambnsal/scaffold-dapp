@@ -1,0 +1,38 @@
+{
+  "name": "@scaffold-dapp/monorepo",
+  "version": "0.0.1",
+  "description": "Next generation monorepo for dapp development",
+  "author": {
+    "name": "Satyam Bansal",
+    "email": "satyambnsal@gmail.com",
+    "url": "https://satyambnsal.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satyambnsal/scaffold-dapp"
+  },
+  "private": "true",
+  "scripts": {
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/@graphprotocol/graph-ts",
+      "**/@graphprotocol/graph-ts/**",
+      "**/hardhat",
+      "**/hardhat/**",
+      "**/hardhat-ts",
+      "**/hardhat-ts/**"
+    ]
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+  }
+
+}
